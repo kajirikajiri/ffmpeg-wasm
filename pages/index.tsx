@@ -23,7 +23,8 @@ const Home: NextPage = () => {
   return <div>
   <video id="player" controls/>
     <input type="file" id="uploader"/>
-    <Script src="/ffmpeg.js" />
+    <Script strategy="beforeInteractive"
+ src="ffmpeg.js" />
     {/* <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.1/dist/ffmpeg.min.js"/> */}
   </div>
 }
