@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { useEffect } from 'react'
 import {FFmpeg as FFmpegInterface} from '@ffmpeg/ffmpeg'
-// import Head from 'next/head'
+import Script from 'next/script'
 
 declare var FFmpeg: any;
 
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   return <div>
   <video id="player" controls/>
     <input type="file" id="uploader"/>
-    <script src="/ffmpeg.js" />
+    <Script src="/ffmpeg.js" />
     {/* <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.1/dist/ffmpeg.min.js"/> */}
   </div>
 }
